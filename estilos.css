@@ -45,12 +45,19 @@ header{
     width: 400px;
     top: 30%;
 }
-h1{
+header > h1{
     line-height: 75px;
     font-weight: 500;
-    font-size: 64px;
+    font-size: 48px;
     font-style: normal;
     font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0.05em 0.02em 0.08em #444;
+}
+div h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    text-shadow: 0.08em 0.02em 0.08em #444;
 }
 header p{
     width: 757px;
@@ -77,6 +84,25 @@ header button{
 header button:hover{
     box-shadow: 1px 1px 7px #333;
 }
+
+/*view 2*/
+.view2{
+    background-color: #444;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-width: 1300px;
+}
+
+.view2 > h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+}
+
+/*imagenes*/
+
 .logoargprog{
     position: absolute;
     top: auto;
