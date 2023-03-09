@@ -16,11 +16,11 @@
 <!--Barra de navegación-->
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-bg-light">
+    <a class="navbar-brand"><img class="img-fluid" src= "https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1676134779/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2817%29.png"></a>
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src= "https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1676134779/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2817%29.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -30,16 +30,14 @@
             <a class="nav-link" href="#"></a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Contacto
-                  </a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Github</a></li>
               <li><a class="dropdown-item" href="#">LInkedin</a></li>
               <li><a class="dropdown-item" href="#">Facebook</a></li>
             </ul>
         </ul>
-        <div class="d-flex d-inline justify-content-end align-items-center">
+        <div class="d-flex d-inline justify-content-end justify-content-sm-start align-items-center">
           <button class="btn btn-primary me-md-2">Iniciar sesión</button>
           <button class="btn btn-warning">Registrarse</button>
         </div>
@@ -51,14 +49,17 @@
 <div class="container">
   <header>
     <h1><img src="imagenes/header-img.png" class="img-fluid rounded-bottom" alt="img-header"></h1>
-    <h1></h1>
-    <div class="row justify-content-sm-center">
+    <div class="row d-sm-flex">
       <div class="col-md-3">
-        <img src="https://us.123rf.com/450wm/alekseyvanin/alekseyvanin1712/alekseyvanin171200974/91724249-perfil-del-c%C3%ADrculo-para-avatar-.jpg" class="img-thumbnail rounded-circle border-dark" width="200px" alt="miFotoDePerfil">
+        <img src="https://st3.depositphotos.com/9998432/13335/v/600/depositphotos_133351884-stock-illustration-default-placeholder-woman.jpg" class="img-thumbnail mx-auto d-block rounded-circle border-dark" id="miFotoDePerfil">
       </div>
       <div class="col-md-9">
-        <h1 class="text-start align-content-center p-2" id="nombreDePerfil">Selene Jofré</h1>
-        <h3 class="text-start align-content-center p-2" id="descripcionDePerfil">Programadora Web Fullstack Junior, estudiante de la segunda etapa de Argentina Programa #YoProgramo!</h3>
+        <h1 class="text-md-start text-sm-center align-content-center p-2" id="nombre">Selene Jofré
+          <button id="botonEditar" type="button" href="nombreDePerfil" class="btn btn-outline-dark btn-sm rounded-circle"><i class="fa-solid fa-pencil"></i></button>
+        </h1>
+        <h3 class="text-md-start text-sm-center align-content-center p-2" id="descripcionDePerfil">Programadora Web Fullstack Junior, estudiante de la segunda etapa de Argentina Programa #YoProgramo!
+          <button id="botonEditar" type="button" href="descripcionDePerfil" class="btn btn-outline-dark btn-sm rounded-circle"><i class="fa-solid fa-pencil"></i></button>
+        </h3>
       </div>
     </div>
     
@@ -69,23 +70,33 @@
 
 <div class="container">
    <div class="view-1">
-      <h2>Acerca de...</h2>
+      <h2>Acerca de...
+        <button id="botonEditar" type="button" href="view-1" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-solid fa-pencil"></i></button>
+      </h2>
+      <p>Contenido Acerca de...</p>
    </div>
   <hr>
    <div class="view-2">
-      <h2 >Experiencia</h2>
+      <h2 >Experiencia
+        <button id="botonEditar" type="button" href="view-2" class="btn btn-outline-dark btn-sm rounded-circle"><i class="fa-solid fa-pencil"></i></button>
+      </h2>
+      <p>Contenido experiencia</p>
    </div>
   <hr>
    <div class="view-3">
-      <h2 class>Educación</h2>
+      <h2 class>Educación
+        <button id="botonEditar" type="button" href="view-3" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-solid fa-pencil"></i></button>
+      </h2>
          <p>
          Introducción a Javascript - Curso intensivo de Grasshopper.<br>
          Fundamentos de HTML y CSS - Curso intensivo de ProgrammingHub.</p>
    </div>
   <hr>
    <div class="view-4">
-      <h2>Hard & Soft skills</h2>
-         <div class="row justify-content-center">
+      <h2>Hard & Soft skills
+        <button id="botonEditar" type="button" href="view-4" class="btn btn-outline-dark btn-sm rounded-circle"><i class="fa-solid fa-pencil"></i></button>
+      </h2>
+         <div class="row justify-content-center align-content-sm-between">
             <div class="col-4">
               <p>HTML<br>CSS<br>Javascript<br>Typescript<br>Bootstrap<br>Angular</p>
             </div>
@@ -96,7 +107,9 @@
     </div>
   <hr>
    <div class="view-5">
-      <h2>Proyectos</h2>
+      <h2>Proyectos
+        <button id="botonEditar" type="button" href="view-5" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-solid fa-pencil"></i></button>
+      </h2>
       <p>Porfolio Web para Argentina Programa</p>
    </div>
    <hr>
